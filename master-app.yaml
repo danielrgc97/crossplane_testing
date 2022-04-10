@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myapp-argo-application
+  name: master-app
   namespace: argocd
 spec:
   project: default
@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/danielrgc97/crossplane_testing
     targetRevision: HEAD
-    path: app1
+    path: master-app
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp
@@ -21,4 +21,3 @@ spec:
     automated:
       selfHeal: true
       prune: true
-
