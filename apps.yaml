@@ -10,7 +10,7 @@ metadata:
 spec:
   project: production
   source:
-    repoURL: https://github.com/vfarcic/combine-infra-services-apps.git
+    repoURL: https://github.com/danielrgc97/crossplane_testing.git
     targetRevision: HEAD
     path: controller
   destination:
